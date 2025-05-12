@@ -1,0 +1,147 @@
+#root {
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.logo {
+	height: 6em;
+	padding: 1.5em;
+	will-change: filter;
+	transition: filter 300ms;
+}
+.logo:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+	filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo.cloudflare:hover {
+	filter: drop-shadow(0 0 2em #f6821faa);
+}
+
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
+}
+
+.card {
+	padding: 2em;
+}
+
+.read-the-docs {
+	color: #888;
+}
+
+/* Additional styling for markdown content */
+.markdown-content {
+  line-height: 1.6;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.markdown-content h1 { font-size: 1.5rem; }
+.markdown-content h2 { font-size: 1.25rem; }
+.markdown-content h3 { font-size: 1.1rem; }
+
+.markdown-content p {
+  margin-bottom: 0.75rem;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+}
+
+.markdown-content code {
+  font-family: monospace;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.1rem 0.2rem;
+  border-radius: 3px;
+}
+
+.markdown-content pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.75rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-content a {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+.markdown-content blockquote {
+  border-left: 3px solid #d1d5db;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #6b7280;
+}
+
+.markdown-content table {
+  border-collapse: collapse;
+  margin-bottom: 0.75rem;
+  width: 100%;
+}
+
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+}
+
+.markdown-content th {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Button styling for mobile responsiveness */
+@media (max-width: 640px) {
+  button[type="submit"],
+  button[type="button"] {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+
+  /* Fix for buttons with Tailwind classes in mobile view */
+  button.hover\:bg-blue-900:hover {
+    background-color: var(--blue-button-hover);
+  }
+
+  /* Better padding for the form in mobile view */
+  form.sticky {
+    padding-bottom: 0.5rem;
+    margin-bottom: 3rem;
+  }
+}
